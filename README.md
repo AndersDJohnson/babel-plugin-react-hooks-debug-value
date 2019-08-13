@@ -29,12 +29,12 @@ since the code is transformed into this:
 
 ```js
 const useDebugValue2 = (...args) => {
-  useDebugValue("otherState");
+  React.useDebugValue("otherState");
   return React.useState(...args);
 };
 
 const useDebugValue1 = (...args) => {
-  useDebugValue("myState");
+  React.useDebugValue("myState");
   return useState(...args);
 };
 

@@ -41,7 +41,9 @@ module.exports = function(babel) {
                         t.arrowFunctionExpression([
                           t.restElement(t.identifier('args'))
                         ], t.blockStatement([
-                          t.expressionStatement(t.callExpression(t.identifier('useDebugValue'), [
+                          t.expressionStatement(t.callExpression( t.memberExpression(
+                              t.identifier('React'), t.identifier('useDebugValue')
+                          ), [
                             t.stringLiteral(stateName)
                           ])),
                           t.returnStatement(newNode)

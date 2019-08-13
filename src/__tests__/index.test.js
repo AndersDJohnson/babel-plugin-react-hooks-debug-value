@@ -31,17 +31,17 @@ describe("plugin", () => {
 
     expect(result).toMatchInlineSnapshot(`
       "const useDebugValue2 = (...args) => {
-        useDebugValue(\\"value2\\");
+        React.useDebugValue(\\"value2\\");
         return React.useState(...args);
       };
 
       const useDebugValue1 = (...args) => {
-        useDebugValue(\\"value\\");
+        React.useDebugValue(\\"value\\");
         return useState(...args);
       };
 
       const useDebugValue0 = (...args) => {
-        useDebugValue(\\"val\\");
+        React.useDebugValue(\\"val\\");
         return useState(...args);
       };
 
