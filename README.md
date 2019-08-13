@@ -1,5 +1,5 @@
 # babel-plugin-react-hooks-debug-value
-Babel plugin to give React Hooks a label via `useDebugValue`.
+Babel plugin to give React Hooks a label in DevTools.
 
 With this plugin, it's clear in React DevTools which hook values correspond to which variables.
 
