@@ -5,6 +5,8 @@ const getIsHookCall = path => {
 
   const isHookCall = /^use[A-Z]/.test(name);
 
+  if (!path.parent.id) return;
+
   let stateName = (
     path.parent.id && path.parent.id.elements && path.parent.id.elements[0] && path.parent.id.elements[0].name
   ) || ( path.parent.id && path.parent.id.name)
@@ -42,7 +44,7 @@ module.exports = function(babel) {
                           t.expressionStatement(t.callExpression(t.identifier('useDebugValue'), [
                             t.stringLiteral(stateName)
                           ])),
-                          t.expressionStatement(newNode)
+                          t.returnStatement(newNode)
                         ]))
                     )
                   ])
