@@ -2,8 +2,22 @@
   "name": "babel-plugin-react-hooks-debug-value",
   "version": "1.0.0",
   "description": "",
-  "keywords": [],
-  "main": "test/index.js",
+  "keywords": [
+    "babel",
+    "babel-plugin",
+    "babel-plugin-react",
+    "react",
+    "react-hooks",
+    "react-debugValue",
+    "debugValue",
+    "label",
+    "variable",
+    "useState",
+    "react-useState"
+  ],
+  "main": "src/index.js",
+  "author": "Anders D. Johnson",
+  "repository": "AndersDJohnson/babel-plugin-react-hooks-debug-value",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -15,5 +29,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "jest"
+  }
 }
