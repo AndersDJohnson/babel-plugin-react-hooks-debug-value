@@ -31,5 +31,6 @@
   },
   "scripts": {
     "test": "jest"
-  }
+  },
+  "license": "MIT"
 }
